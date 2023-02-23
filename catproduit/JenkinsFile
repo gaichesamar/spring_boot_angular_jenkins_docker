@@ -6,28 +6,19 @@ pipeline {
                 checkout([
                     $class: 'GitSCM',
                     branches: [[name: 'main']],
-                    userRemoteConfigs: [[url: 'https://github.com/gaichesamar/categorie_produit_crud-spring-boot-.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/gaichesamar/spring_boot_angular_jenkins_docker.git']]
                 ])
             }
         }
 
-        stage('MVN CLEAN') {
-            steps {
-                sh 'mvn clean'
-            }
-        }
+       stage('MVN CLEAN') {
+                   steps {
+                      withMaven() {
+                     bat 'mvn clean compile'
 
-        stage('MVN COMPILE') {
-            steps {
-                sh 'mvn compile'
-            }
-        }
-
-
-
-
-
-
+                  }
+                }
+               }
 
 
       }
