@@ -1,0 +1,11 @@
+
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§œ’æÿÿÿÿÿ
+f
+java:S3655$"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(©ö¤õ
+f
+java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ï¤ßÕ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÐŠ€Žýÿÿÿÿ
+=
+java:S1905"'Remove this unnecessary cast to "List".(ÐÇÄ†
